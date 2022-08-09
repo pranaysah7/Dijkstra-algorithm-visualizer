@@ -1,0 +1,146 @@
+.node
+{
+    width: 30px;
+    height: 22px;
+
+    border: 1px solid rgb(175, 216, 248);
+
+}
+
+.node-start
+{
+    background-color: rgb(233, 30, 30);
+    background-position: center;
+    background-size: cover;
+}
+
+.node-finish
+{
+    background-color: rgb(141, 243, 82);
+    /* background-image: url(images/end.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.node-wall
+{
+    border: 1px solid black;
+    background-color: black;
+}
+.node-weight
+{
+    /* background-image: url(images/weight.png); */
+    background-color: brown;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.node-visited
+{
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+    animation-fill-mode: forwards;
+}
+@keyframes visitedAnimation
+{
+    0%
+    {
+        background-color: rgba(0, 0, 66, .75);
+    }
+    100%
+    {
+        transform: scale(1);
+
+        background-color: rgba(0, 190, 218, .75);
+    }
+}
+
+.node-visitedWeight
+{
+    animation-name: visitedWeightAnimation;
+    animation-duration: 0.2s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+    animation-fill-mode: forwards;
+}
+@keyframes visitedWeightAnimation
+{
+
+    100%
+    {
+        transform: scale(1);
+
+        opacity: .75;
+        background-color: green;
+        /* background-image: url(images/visitedWeight.png); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.node-path
+{
+    animation-name: shortestPathAnimation;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+    animation-fill-mode: forwards;
+}
+@keyframes shortestPathAnimation
+{
+    100%
+    {
+        transform: scale(1);
+
+        background-color: rgba(255, 242, 0, .75);
+    }
+}
+
+.node-path-weight
+{
+    animation-name: shortestPathAnimationWeight;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    /* animation-timing-function: ease-out; */
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+    animation-fill-mode: forwards;
+}
+@keyframes shortestPathAnimationWeight
+{
+
+    75%
+    {
+        transform: scale(1.2);
+
+        background-color: rgba(26, 68, 116, 0.75)cyan;
+    }
+
+    100%
+    {
+        transform: scale(1);
+
+        background-image: url(images/pathWeight.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

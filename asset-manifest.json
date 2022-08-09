@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Dijkstra-algorithm-visualizer/static/css/main.89a02154.css",
+    "main.js": "/Dijkstra-algorithm-visualizer/static/js/main.8bcc69fe.js",
+    "static/js/787.d3befce1.chunk.js": "/Dijkstra-algorithm-visualizer/static/js/787.d3befce1.chunk.js",
+    "index.html": "/Dijkstra-algorithm-visualizer/index.html",
+    "main.89a02154.css.map": "/Dijkstra-algorithm-visualizer/static/css/main.89a02154.css.map",
+    "main.8bcc69fe.js.map": "/Dijkstra-algorithm-visualizer/static/js/main.8bcc69fe.js.map",
+    "787.d3befce1.chunk.js.map": "/Dijkstra-algorithm-visualizer/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89a02154.css",
+    "static/js/main.8bcc69fe.js"
+  ]
+}
